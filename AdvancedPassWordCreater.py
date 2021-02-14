@@ -34,7 +34,8 @@ def welcome():
     if l.isdigit():
         gotten_data.append(int(l))
         return passcreater(*gotten_data)
-    print("Sorry length must be integer, Please try again")
+    else:
+        print("Sorry length must be integer, Please try again")
 
 
 t = welcome()
