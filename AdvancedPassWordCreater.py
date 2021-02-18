@@ -26,7 +26,8 @@ def passcreater(*args):
 # Get The User's Desired Information about their wanted PassWord
 def welcome():
     print("""Welcome to EFA Pass Creater
-    Please Enter 'T' for Accept or 'F' to Ignore(Notice: writing any other thing will assume F too)""")
+    Please Enter 'T' for Accept or 'F' to Ignore
+    (Notice: writing any other thing will assume F too)""")
     gotten_data = []
     for i in ["lower aphabet", "upper alphabet", "numbers", "usual symbols", "advanced symbols"]:
         gotten_data.append(True if input(f" Would you like to have {i.capitalize()} in your PassWord? ").lower() == 't' else False)
