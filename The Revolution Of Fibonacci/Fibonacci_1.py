@@ -14,7 +14,7 @@ def fibonacci_1(n):
             FiboList.append(-1)
         Flag = False   
     
-    if Flag == False:    
+    if not Flag:    
         if FiboList[n] == -1:
             FiboList[n] = fibonacci_1(n-1) + fibonacci_1(n-2) 
             return FiboList[n]   
