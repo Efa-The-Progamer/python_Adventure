@@ -1,6 +1,6 @@
 # This function checks if the number(num)
 # is a prime number or not
-# At first if number is less than(1) or is one itself,
+# At first if number is greater than 1 or it is one itself,
 # so it is not a prime number
 # Then if it is not 2, 3, 5, it starsts to check some statmentslike:
 # 1.  num - (num // 10) * 10 not in [1, 3, 7, 9]
