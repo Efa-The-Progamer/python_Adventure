@@ -1,0 +1,30 @@
+#there are lots of codes that can take numbers from client and give them it's binary code
+#but  this is my own code and i wanted to share it.
+
+
+import sys
+
+#1.getting number
+bit = int(sys.argv[1])
+
+#2.finding the maximum number in basics 2 that is nearer to bit so we have a start for over for loop
+def maxbinary(n):
+    for i in range(n):
+        if n<2**i:
+            return (i-1)
+        elif n==2**1:
+            return i
+#3.subtracing 
+def binary(n):
+    max = maxbinary(n)+1
+    c=[0]*max
+    res = n
+    for i in range(max,-1,-1):
+        res=res-(2**i)
+        if res>=0:
+            c[i]=1
+        else:
+            res= res + (2**i)
+    c.reverse()
+    return c
+print(binary(bit))
